@@ -12,7 +12,7 @@ with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
     setuptools.setup(
         name="lambdata_ezorigo",
-        version="0.1.1",
+        version="0.1.3",
         author="ezorigo",
         description="a collection of data science helpet functions",
         long_description=LONG_DESCRIPTION,
