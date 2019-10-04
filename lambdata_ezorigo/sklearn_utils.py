@@ -8,6 +8,8 @@ from sklearn.model_selection import train_test_split
 def tvts(data):
     """
     split DataFrame into train (60%), validation (20%), test (20%)
+
+    train, val, test = tvts(data)
     """
     data = data.copy()
     trainval, test = train_test_split(
@@ -16,7 +18,7 @@ def tvts(data):
         random_state=None
     )
 
-    val_size = test.index_size()
+    val_size = test.index.size
 
     train, val = train_test_split(
         trainval,
